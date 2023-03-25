@@ -1,0 +1,33 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    /* colors pallet */
+    --pr-very-dark-blue: hsl(243, 87%, 12%);
+    --pr-desaturated-Blue: hsl(238, 22%, 44%);
+    --ac-bright-blue: hsl(224, 93%, 58%);
+    --ac-moderate-cyan: hsl(170, 45%, 43%);
+    --ne-light-grayish-blue: hsl(240, 75%, 98%);
+    --ne-light-gray: hsl(0, 0%, 75%);
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--ne-light-grayish-blue);
+}
+h1,h2,h3, header{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* mobile size */
+@media only screen and (max-width: 376px){
+
+}
+/* desktop size */
+@media only screen and (min-width: 1440px){
+
+}
