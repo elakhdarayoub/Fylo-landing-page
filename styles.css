@@ -40,9 +40,10 @@ header{
 }
 @media only screen and (max-width: 375px){
     header{
-        font-size: .91rem;
+        font-size: .8rem;
     }
 }
+
 header .logo{
     width: 7rem;
 }
@@ -51,6 +52,17 @@ header .logo{
 }
 .main-nav li{
     margin-left: 1.5rem;
+}
+/* on very small devices */
+@media only screen and (max-width: 356px){
+    header{
+        flex-direction: column;
+        font-size: 1rem;
+    }
+    header .logo{
+        width: 10rem;
+        margin-bottom: 1rem;
+    }
 }
 /* responsive header on tablet size */
 @media only screen and (min-width: 768px){
@@ -64,7 +76,6 @@ header .logo{
         margin-left: 4rem;
     }
 }
-
 .hero {
     width: 100vw;
     color: var(--pr-very-dark-blue);
@@ -113,6 +124,9 @@ header .logo{
     border: none;
     border-radius: 4px;
 }
+.hero__newsletter button{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
 /* tablet size */
 @media only screen and (min-width: 768px){
     .hero__newsletter form{
@@ -157,10 +171,12 @@ header .logo{
     }
     .form-styling > *{
         display: inline-block;
+        vertical-align: baseline;
     }
     .hero__newsletter input{
         width: 55%;
         margin-right: 1rem;
+        margin-bottom: 0;
     }
     .hero__newsletter button{
         width: 35%
@@ -191,8 +207,18 @@ header .logo{
     margin: 2.5rem auto;
     padding-bottom: .8rem;
     color: var(--ac-moderate-cyan);
-    border-bottom: 1px solid var(--ac-moderate-cyan);
 }
+@media only screen and (max-width: 375px){
+    .main-feature__btn{
+        width: 70%;
+    }
+}
+.main-feature__btn a{
+    color: inherit;
+    border-bottom: 1px solid var(--ac-moderate-cyan);
+    padding-bottom: 1rem;
+}
+
 .circled {
     color: white;
     background-color: var(--ac-moderate-cyan);
@@ -250,6 +276,7 @@ header .logo{
         padding-bottom: 1.5rem;
         line-height: 2;
     }
+  
     .main-feature__testimony-card{
         padding: 2rem 4rem;
         margin: 3rem 5rem;
@@ -293,12 +320,10 @@ header .logo{
         text-align: left;
     }
     .main-feature__btn{
-        width: 26%;
         margin: 1.5rem 0;
         padding-bottom: .8rem;
         text-align: left;
         color: var(--ac-moderate-cyan);
-        border-bottom: 1px solid var(--ac-moderate-cyan);
     }
     .main-feature__testimony-card{
         width: 80%;
@@ -310,6 +335,7 @@ header .logo{
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     }
 }
+
 .newsletter-cta{
     color: var(--ne-light-grayish-blue);
     background-color: var(--pr-desaturated-Blue);
@@ -333,14 +359,15 @@ header .logo{
 }
 .newsletter-cta__form .form-styling > *{
     width: 100%;
+    margin: 0;
     margin-bottom: .5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 .form-styling .input-styling{
     padding-left: .7rem;
 }
 .newsletter-cta__form button.cta__button{
     font-size: .9rem;
-    margin-bottom: 0;
 }
 /* tablet size */
 @media only screen and (min-width: 768px){
@@ -367,6 +394,7 @@ header .logo{
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        padding: 3.5rem;
     }
     .newsletter-cta__text{
         flex: 1;
@@ -379,27 +407,29 @@ header .logo{
         margin: 0;
     }
     .newsletter-cta__form{
-        flex: 1;
-        display: flex;
-        flex-direction: column;
+        flex-basis: 50%;
         align-items: flex-end;
     }
     .newsletter-cta__form .form-styling{
         margin: 0;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
     }
     .form-styling .input-styling{
         margin-right: 0;
     }
     .newsletter-cta__form button.cta__button{
         width: 50%;
-        margin-left: -9.5rem;
+        /* margin-left: -13rem; */
+        margin-right: 0;
         font-size: .85rem;
     }
 }
 footer{
     color: var(--ne-light-grayish-blue);
     background-color: var(--pr-very-dark-blue);
-    padding: 4rem 2rem;
+    padding: 4rem 1.5rem;
     padding-bottom: 1rem;
 }
 footer li a{
@@ -479,12 +509,12 @@ footer li a{
     }  
 }
 @media only screen and (min-width: 1124px){
+    footer{
+        padding-inline: 3.5rem;
+    }
     .footer-nav{
         flex-basis: 60%;
         display: flex;
         justify-content: space-around;
     }
 }
-/* mobile size */
-/* @media only screen and (min-width: 375px){
-} */
