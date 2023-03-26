@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/elakhdarayoub/fylo-landing-page)
-- Live Site URL: [](https://elakhdarayoub.github.io/fylo-landing-page/)
+- Solution URL: [Check the code here](https://github.com/elakhdarayoub/fylo-landing-page)
+- Live Site URL: [Check the website here](https://elakhdarayoub.github.io/fylo-landing-page/)
 
 ## My process
 
