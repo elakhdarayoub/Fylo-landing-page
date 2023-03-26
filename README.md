@@ -59,6 +59,6 @@ I need to work more on the usage grid layout
 
 ## Author
 
-- Website - [Ayoub Elakhdar](https://www.linkedin.com/in/elakhdarayoub/)
+- LinkedIn - [Ayoub Elakhdar](https://www.linkedin.com/in/elakhdarayoub/)
 - Frontend Mentor - [@elakhdarayoub](https://www.frontendmentor.io/profile/elakhdarayoub)
 - Twitter - [@elakhdar_ayoub](https://twitter.com/elakhdar_ayoub)
