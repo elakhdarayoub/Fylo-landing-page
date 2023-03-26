@@ -124,6 +124,10 @@ header .logo{
     border: none;
     border-radius: 4px;
 }
+.button:hover{
+    opacity: .9;
+    cursor: pointer;
+}
 .hero__newsletter button{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
@@ -216,9 +220,8 @@ header .logo{
 .main-feature__btn a{
     color: inherit;
     border-bottom: 1px solid var(--ac-moderate-cyan);
-    padding-bottom: 1rem;
+    padding-bottom: .8rem;
 }
-
 .circled {
     color: white;
     background-color: var(--ac-moderate-cyan);
@@ -434,7 +437,6 @@ footer{
 }
 footer li a{
     color: var(--ne-light-grayish-blue);
-
 }
 .fylo-footer-logo{
     margin-bottom: 1.5rem;
@@ -462,7 +464,6 @@ footer li a{
     margin-bottom: 1rem;
     display: flex;
     justify-content: space-evenly;
-
 }
 .social-icon{
     width: 25px;
@@ -474,6 +475,10 @@ footer li a{
     align-items: center;
     padding: 1rem;
     cursor: pointer;
+}
+footer li a:hover,
+.social-icon:hover{
+    color: var(--ac-bright-blue);
 }
 .attribution{
     background-color: var(--pr-very-dark-blue);
