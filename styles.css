@@ -22,7 +22,6 @@ li{
 body{
     font-family: 'Open Sans', sans-serif;
     background-color: var(--ne-light-grayish-blue);
-
 }
 h1,h2,h3, header{
     font-family: 'Raleway', sans-serif;
@@ -135,7 +134,6 @@ header .logo{
     .hero__newsletter form{
         display: flex;
         justify-content: space-around;
-        
     }
     .form-styling > *{
         display: inline-block;
